@@ -1,0 +1,367 @@
+# my-web-page
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suraj Gupta Fitness Club</title>
+    <style>
+        body {
+            background-image: url(./bg.jpg.jpg);
+            background-size: cover;
+            height: 110em;
+            /* width: 100%; */
+        }
+
+        header {
+            padding: 30px 0px;
+        }
+
+        .club {
+            background-color: rgb(64, 51, 77);
+            border-radius: 133px;
+        }
+
+        .club ul {
+            overflow: auto;
+        }
+
+        .club li {
+            float: right;
+            list-style: none;
+            margin: 33px 86px;
+            font-size: 23px;
+        }
+
+        .club li a {
+            padding: 5px 6px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .club li a:hover {
+            color: yellow;
+        }
+
+        .club li a#active {
+            /* border: 2px solid black; */
+            color: rgb(85, 0, 255);
+            /* background-color: aquamarine; */
+        }
+
+        .club img {
+            /* border: 2px solid yellow; */
+            display: block;
+            width: 3%;
+            margin: -19px 63px;
+        }
+
+        header .image {
+            /* border: 2px solid green; */
+            float: right;
+
+        }
+
+        .main {
+            color: white;
+            margin: 9px 44px;
+            font-size: 25px;
+        }
+
+        .main1 {
+            margin: 2px 36px;
+            font-size: 21px;
+        }
+
+        .main strong#active {
+            color: red;
+        }
+
+        .top {
+            margin: auto;
+        }
+
+        .box {
+            /* border: 2px solid black; */
+            margin: 4px 0px;
+            padding: 23px;
+            background-color: grey;
+            box-sizing: border-box;
+            width: 33%;
+            display: inline-block;
+        }
+
+        .form1 input {
+            /* float: right; */
+            order: 2px solid yellow;
+            display: block;
+            width: 50%;
+            text-align: center;
+            margin: 8px auto;
+            padding: 4px 0px;
+            font-size: 12px;
+
+        }
+
+        .container {
+            /* border: 2px solid red; */
+            float: right;
+            margin: -12px 60px;
+            padding: 0px 0px;
+            width: 40%;
+        }
+
+        .container h1 {
+            color: White;
+            text-align: center;
+        }
+
+        .container button {
+            display: block;
+            width: 20%;
+            margin: 35px auto;
+            padding: 4px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .img2 {
+            /* border: 2px solid yellow; */
+            display: block;
+            width: 32%;
+            margin: 11px 111px;
+            padding: 4px auto;
+        }
+
+        #fab {
+            float: right;
+            display: block;
+            width: 4%;
+            margin: -29px 195px;
+        }
+
+        #insta {
+            float: right;
+            display: block;
+            width: 4%;
+            margin: -29px 128px;
+            height: 42px;
+        }
+
+        #twt {
+            float: right;
+            display: block;
+            width: 3%;
+            margin: -29px 75px;
+            height: 42px;
+        }
+
+        .info {
+            border: 2px solid black;
+            background-color: #1d1313;
+            color: rgb(225, 26, 26);
+            margin: 610px 0px;
+            padding: 14px 104px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .event {
+            color: black;
+            background-color: rgb(54, 211, 180);
+            /* border: 2px solid black; */
+            margin: -610px 0px;
+            padding: 57px 14px;
+        }
+
+        .event button:hover {
+            color: red;
+            background-color: black;
+            cursor: pointer;
+        }
+
+        #fab1 {
+            color: white;
+            float: right;
+            display: block;
+            width: 4%;
+            margin: -17px 169px;
+        }
+
+        #insta1 {
+            color: white;
+            float: right;
+            display: block;
+            width: 4%;
+            margin: -16px 102px;
+            height: 0px;
+        }
+
+        #twt1 {
+            color: #0e29de;
+            float: right;
+            display: block;
+            width: 3%;
+            margin: -15px 54px;
+            height: 0px;
+            text-decoration: none;
+        }
+
+        #marq {
+            /* width: auto; */
+            color: yellow;
+            margin: 0px 90px;
+            padding: 0px 169px;
+            /* font-size: 45px; */
+            /* overflow: visible; */
+
+        }
+
+        .trial {
+            color: #2a01ff;
+            /* border: 2px solid black; */
+            float: right;
+            display: block;
+            margin: -45px 225px;
+            padding: 0px 3px;
+        }
+
+        .info h2 {
+            color: white;
+        }
+
+        .info li {
+            /* border: 2px solid red; */
+            /* display: inline-block; */
+            margin: 1px 168px;
+            padding: 4px 70px;
+        }
+
+        .info li a:hover {
+            color: aqua;
+        }
+
+        #U {
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        h3#menu {
+            /* border: 2px solid black; */
+            color: rgb(245, 52, 52);
+            display: block;
+            margin: 44px 203px;
+            padding: 0px 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="club">
+            <div>
+                <marquee direction="right" scrollamount="10%" behavior="alternate" id="marq">Welcome to our
+                    Fitness Club</marquee>
+            </div>
+            <img src="https://tse4.mm.bing.net/th?id=OIP.brwrtnxRawfvi8sTryaQZwHaHa&pid=Api&P=0" alt="">
+            <img src="https://tse1.explicit.bing.net/th?id=OIP.Ua5AXhtGRgPuisZVmetclQHaFL&pid=Api&P=0" alt="" id="fab">
+            <a href="http://facebook.com" id="fab1">f</a>
+            <img src="https://tse1.mm.bing.net/th?id=OIP.-ZirgQE5pr8e7htQWowJIgHaHa&pid=Api&P=0" alt="" id="insta">
+            <a href="http://instagram.com" id="insta1">i</a>
+            <img src="https://tse2.mm.bing.net/th?id=OIP.E0fJoebFtBmzdNibqJA8egHaGB&pid=Api&P=0" alt="" id="twt">
+            <a href="http://twitter.com" id="twt1">t</a>
+            <ul>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="nutrition.html">Nutrition</a></li>
+                <li><a href="timetable.html">Timetable</a></li>
+                <li><a href="training.html">Trainings</a></li>
+                <li><a href="about.html" id="active">About us</a></li>
+                <div class="main">
+                    <strong id="acive">Fitness</strong>
+                    <div class="main1">
+                        <strong id="acive">Club</strong>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div class="trial">
+        <h4>
+            <p>START YOUR 10 DAYS FREE TRIAL</p>
+        </h4>
+    </div>
+    <div class="container">
+        <h1>Join My Fitness Club</h1>
+        <form action="noaction.php">
+            <div class="form1">
+                <input type="text" placeholder="Name">
+            </div>
+            <div class="form1">
+                <input type="text" placeholder="Age">
+            </div>
+            <div class="form1">
+                <input type="text" placeholder="Gender">
+            </div>
+            <div class="form1">
+                <input type="text" placeholder="Adrress">
+            </div>
+            <div class="form1">
+                <input type="text" placeholder="Contact">
+            </div>
+            <div class="form1">
+                <input type="text" placeholder="Email id">
+            </div>
+            <!-- <div class="form1">
+                <input type="password" id="Password" placeholder="Password">
+                <input type="checkbox" id="check" name="check" value="Club">
+                <label for="check"><p id="P">have to read T & C</p></label>
+            </div> -->
+            <button>Registor Now</button>
+        </form>
+    </div>
+    <div class="info">
+        <h2>Information About Fitness Club</h2>
+        <!-- <p>Bahot hard</p> -->
+        <ul type="none">
+            <h3 id="menu">Menu</h3>
+            <h3>
+                <li><a href="#" id="U">Videos</a></li>
+            </h3>
+            <h3>
+                <li><a href="#" id="U">Explore Self</a></li>
+            </h3>
+            <h3>
+                <li><a href="#" id="U">T & C</a></li>
+                <h3>
+                    <li><a href="#" id="U">Let's Chat</a></li>
+                </h3>
+        </ul>
+        <ul type="none">
+            <h3 id="menu">Resource</h3>
+            <h3>
+                <li><a href="#" id="U">Fitness Challenge</a></li>
+            </h3>
+            <h3>
+                <li><a href="#" id="U">Weekly Schedules</a></li>
+            </h3>
+            <h3>
+                <li><a href="#" id="U">Advance Equipment</a></li>
+                <h3>
+                    <li><a href="#" id="U">Policies</a></li>
+                </h3>
+        </ul>
+    </div>
+    <div class="event">
+        <h4>Latest Event</h4>
+        <p>For the latest news Subscribe below: </p>
+        <input type="text" name="Email" id="email" placeholder="email">
+        <button>Send</button>
+    </div>
+    <!-- <div class="img2">
+        <img src="https://tse2.mm.bing.net/th?id=OIP.Q_Pom4J_M6KbfrrxbTJsNQHaE8&pid=Api&P=0" alt="">
+    </div> -->
+</body>
+
+</html>
